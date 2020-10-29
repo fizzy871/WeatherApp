@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="TeG-xG-ahV">
+            <rect key="frame" x="0.0" y="0.0" width="800" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="D0z-4H-lfW">
+                    <rect key="frame" x="0.0" y="0.0" width="800" height="129"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minute Forecast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWx-KY-1bv">
+                            <rect key="frame" x="0.0" y="0.0" width="800" height="26.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SwE-Dw-s0o">
+                            <rect key="frame" x="0.0" y="32.5" width="800" height="96.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gp-gj-lpO" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="89" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwP-PU-8mk" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="89" y="0.0" width="89" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZB-JJ-ir0" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="178" y="0.0" width="88.5" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeA-za-Vgv" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="266.5" y="0.0" width="89" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="je9-DX-WXa" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="355.5" y="0.0" width="89" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vka-aO-0mt" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="444.5" y="0.0" width="89" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Myi-FJ-sLA" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="533.5" y="0.0" width="88.5" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbG-T8-FTy" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="622" y="0.0" width="89" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Trb-D0-Tem" customClass="MinutePrecipitationView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="711" y="0.0" width="89" height="96.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.74106378424657537" green="0.62275256849315064" blue="0.62325199768356165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D0z-4H-lfW" firstAttribute="top" secondItem="TeG-xG-ahV" secondAttribute="top" id="5ah-Nt-mdJ"/>
+                <constraint firstAttribute="trailing" secondItem="D0z-4H-lfW" secondAttribute="trailing" id="DY6-En-9wg"/>
+                <constraint firstItem="D0z-4H-lfW" firstAttribute="leading" secondItem="TeG-xG-ahV" secondAttribute="leading" id="RKJ-4U-8Bd"/>
+                <constraint firstAttribute="bottom" secondItem="D0z-4H-lfW" secondAttribute="bottom" id="Uvw-Af-xwh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-139.13043478260872" y="369.30803571428572"/>
+        </view>
+    </objects>
+</document>

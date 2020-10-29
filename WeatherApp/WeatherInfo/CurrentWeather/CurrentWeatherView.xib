@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentWeatherView" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="averageVisibilityView" destination="5Dd-oT-hap" id="EKu-xw-cHh"/>
+                <outlet property="cloudinessView" destination="JnQ-Au-KhK" id="eM3-3D-UwJ"/>
+                <outlet property="currentTimeView" destination="qux-2p-mmR" id="vuW-DQ-gF8"/>
+                <outlet property="feelsLikeView" destination="EWc-VT-ui4" id="pBE-cg-lKW"/>
+                <outlet property="humidityView" destination="dzX-Ye-hC2" id="Qt0-sK-JWo"/>
+                <outlet property="middayUVIndexView" destination="VzU-CS-w7k" id="Tdq-sk-Y1y"/>
+                <outlet property="pressureView" destination="Pxd-x3-VRT" id="CXg-qa-7kW"/>
+                <outlet property="rainOrSnowView" destination="stT-NS-8jT" id="BFj-if-jX1"/>
+                <outlet property="sunriseView" destination="yFP-u1-mA4" id="mT9-B5-Rrj"/>
+                <outlet property="sunsetView" destination="0oC-wi-4qn" id="0j2-2t-24o"/>
+                <outlet property="temperatureView" destination="1YB-G8-Kb1" id="g4t-HR-kAp"/>
+                <outlet property="windDirectionView" destination="jUD-kW-XRW" id="dhm-5g-t5R"/>
+                <outlet property="windGustView" destination="Oeq-kc-atX" id="kw5-tR-kcs"/>
+                <outlet property="windSpeedView" destination="184-C6-8jz" id="UKf-Dd-L9D"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WaY-2a-bGb">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="456"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fJ3-pb-dl7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="456"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGV-LP-7T3">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="26.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="6Ze-HM-V7s">
+                            <rect key="frame" x="0.0" y="32.5" width="414" height="423.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qux-2p-mmR" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="current time"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFP-u1-mA4" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="30.5" width="414" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="sunrise"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oC-wi-4qn" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="61.5" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="sunset"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YB-G8-Kb1" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="92" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="temperature"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWc-VT-ui4" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="122.5" width="414" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="feels like"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxd-x3-VRT" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="153.5" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="atm. pressure"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzX-Ye-hC2" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="184" width="414" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="humidity"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JnQ-Au-KhK" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="215" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="cloudiness"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VzU-CS-w7k" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="245.5" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="midday UV index"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dd-oT-hap" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="276" width="414" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="average visibility"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="184-C6-8jz" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="307" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="wind speed"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oeq-kc-atX" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="337.5" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="wind gust"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUD-kW-XRW" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="368" width="414" height="25"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="wind direction"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stT-NS-8jT" customClass="TextLineView" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="399" width="414" height="24.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="rain/snow"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.57851625455616451" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fJ3-pb-dl7" firstAttribute="top" secondItem="WaY-2a-bGb" secondAttribute="top" id="JXK-T0-QHr"/>
+                <constraint firstAttribute="trailing" secondItem="fJ3-pb-dl7" secondAttribute="trailing" id="MOI-zA-A1i"/>
+                <constraint firstItem="fJ3-pb-dl7" firstAttribute="leading" secondItem="WaY-2a-bGb" secondAttribute="leading" id="MiP-tl-4Ac"/>
+                <constraint firstAttribute="bottom" secondItem="fJ3-pb-dl7" secondAttribute="bottom" id="if7-KT-Ll8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="47.826086956521742" y="336.83035714285711"/>
+        </view>
+    </objects>
+</document>
